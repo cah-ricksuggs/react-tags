@@ -19,7 +19,7 @@
   ],
   "author": "Prakhar Srivastav",
   "license": "MIT",
-  "repository": "https://github.com/prakhar1989/react-tags",
+  "repository": "https://github.com/cah-ricksuggs/react-tags",
   "dependencies": {
     "lodash.flow": "^3.3.0",
     "react-dnd": "^2.0.2",
