@@ -61,7 +61,7 @@ var Suggestions = function (_Component) {
           props = _this2.props;
 
       var minQueryLength = props.minQueryLength || 2;
-      return props.query.length >= minQueryLength;
+      return !props.renderAllSuggestions && props.query.length >= minQueryLength;
     }, _this.render = function () {
       var _this3 = _this,
           props = _this3.props;
