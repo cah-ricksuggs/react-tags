@@ -65,6 +65,7 @@ var ReactTags = _react2.default.createClass({
         allowDeleteFromEmptyInput: _react2.default.PropTypes.bool,
         handleInputChange: _react2.default.PropTypes.func,
         handleInputBlur: _react2.default.PropTypes.func,
+        handleInputClick: _react2.default.PropTypes.func,
         minQueryLength: _react2.default.PropTypes.number,
         shouldRenderSuggestions: _react2.default.PropTypes.func,
         removeComponent: _react2.default.PropTypes.func,
@@ -149,6 +150,9 @@ var ReactTags = _react2.default.createClass({
         });
     },
     handleClick: function handleClick() {
+        if (this.props.handleInputClick) {
+            this.props.handleInputClick();
+        }
         var query = this.state.query;
 
         this.setState({
